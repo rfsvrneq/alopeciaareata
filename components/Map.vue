@@ -1,0 +1,67 @@
+<script setup>
+import TaiwanMap from "./TaiwanMap.vue";
+
+const initialCities = ["tainan", "yunlin", "kaohsiung"];
+const currentCity = ref(null);
+
+function onCityChange(city) {
+  currentCity.value = city;
+}
+</script>
+
+<template lang="pug">
+div#map.bg-amber-200(class="imp_event" data-title="2025obesity" data-label="imp_section-2025obesity-Twmap")
+  .container.pt-1
+
+    //- 肥胖地圖
+    .ttl.gs-fade
+      div
+        img(src="/assets/img/ttl-icon.svg")
+        h2 台灣每2人就有1人過重或肥胖，你也是其中之一嗎？
+    
+    .content-p.space-y-8.gs-fade
+      p(class="-tracking-[0]") 根據國健署最新「國民營養健康調查」統計
+        sup 2
+        | ，台灣成人過重或肥胖率已達50.3%，等於每2人就有1人過重或肥胖。
+      p.tracking-tight 在體育署每年發布的「中華民國運動現況調查」中
+        sup 3
+        | ，台灣的肥胖率在過去10年上升了5.3%，2024年過重或肥胖率
+        span.content-span 全台以雲林縣43.1%居冠，六都以高雄市的41.3%為首
+        | 。
+      p.tracking-tight 美食之都
+        span.content-span 台南市
+        | 雖擺脫「六都最胖」之名，但回顧
+        span.content-span 過去10年的過重或肥胖人口成長率則高達7.2%
+        | ，仍為六都之最。
+
+    //- 地圖互動
+    .map-wrap.-ml-5.-mr-7(class="sm:-mx-0")
+      TaiwanMap(
+        class="w-full sm:w-11/12 lg:w-10/12 mx-auto interactive-map" :initialCities="initialCities" @city-change="onCityChange"
+      )
+
+    .flex.justify-center.mb-5(class="flex-col items-center md:flex-row md:space-x-4 space-y-1 md:space-y-0")
+      p(class="text-base sm:text-lg")
+        img.inline.mr-2(src="/assets/img/map-img-2.svg" class="w-6 md:w-10")
+        | 2024年過重或肥胖率
+      p(class="text-base sm:text-lg")
+        img.inline.mr-2(src="/assets/img/map-img-1.svg" class="w-6 md:w-10")
+        | 過去10年過重或肥胖成長率
+
+    small.block ※備註：
+    small.block 根據衛福部標準，18歲以上民眾BMI分類大於或等於27為肥胖，24～27是過重，18.5～24則為標準體位，低於18.5則屬於過輕。
+    small.block 10年肥胖成長率計算方式：2024年各城市肥胖率–2015年各城市肥胖率
+
+</template>
+
+<style scoped lang="sass">
+@use '~/assets/sass/media' as *
+@use '~/assets/sass/colors' as *
+
+// 波浪背景
+.fit
+  width: 100%
+  height: 100%
+  object-fit: cover
+  object-position: center
+</style>
