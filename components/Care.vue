@@ -82,7 +82,7 @@ div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_
          span.text-orange-400 自體免疫系統失衡
          | 導致毛囊受到攻擊的疾病。單靠洗髮精、護髮產品或營養補充品，都無法調整免疫反應，自然也就無法真正解決病因。
 
-        p.content-xs.mt-5 根據醫學共識，圓禿患者都需要專業皮膚科治療，依病情輕重給予不同層級的介入，包括：
+        .content-xs.mt-5 根據醫學共識，圓禿患者都需要專業皮膚科治療，依病情輕重給予不同層級的介入，包括：
           ul.list-disc.list-inside
             li.content-xs 局部或口服類固醇治療：抑制免疫發炎反應，減少毛囊受損
             li.content-xs 免疫抑制劑或標靶藥物（如 JAK 抑制劑）：針對免疫機制進行精準調控

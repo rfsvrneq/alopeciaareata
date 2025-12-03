@@ -106,18 +106,6 @@ const tabComponents = {
   object-fit: cover
   object-position: center
 
-// 分頁按鈕 不規則上緣 + 直角框
-=tabpolygon
-  // 做不規則外型
-  clip-path: polygon(
-    0% 100%,
-    0% 15px,
-    15px 0%,
-    calc(100% - 15px) 0%,
-    100% 15px,
-    100% 100%
-  )
-
 // 分頁
 .tabs-table
   color: white
@@ -131,10 +119,17 @@ const tabComponents = {
     padding: 3px
     margin-left: .25rem
     margin-right: .25rem
+    clip-path: polygon(
+      0% 100%,
+      0% 15px,
+      15px 0%,
+      calc(100% - 15px) 0%,
+      100% 15px,
+      100% 100%
+    )
     +m-480
       margin-left: .15rem
       margin-right: .15rem
-    +tabpolygon
     &.active
       margin-top: -.5rem
   .section-label
@@ -146,7 +141,14 @@ const tabComponents = {
     width: 100%
     text-align: center
     padding: .35rem 0 1.05rem 0
-    +tabpolygon
+    clip-path: polygon(
+      0% 100%,
+      0% 15px,
+      15px 0%,
+      calc(100% - 15px) 0%,
+      100% 15px,
+      100% 100%
+    )
     +m-480
       font-size: 1.25rem
   .section-wrap:nth-child(1)
