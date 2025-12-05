@@ -26,7 +26,7 @@ div#who.bg-blue-100(class="imp_event" data-title="2025obesity" data-label="imp_s
       | ：
 
 
-    .grid.gap-14.mt-10.text-slate-600(class="text-[22px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3")
+    .grid.gap-14.mt-10.text-slate-600(class="text-[19px] sm:text-[22px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3")
       p
         img(src="../assets/img/who-img-1.svg", alt="alt", class="w-10/12 md:w-11/12 mx-auto mb-4")
         span 落髮面積小於 20%，多數可自行恢復或經治療改善。

@@ -57,6 +57,37 @@
       .cls-14 {
         fill: #285380;
       }
+
+      @keyframes tear-flow {
+        0% {
+          opacity: 0.5;
+          transform: translateY(-10px);
+        }
+        70% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes tear-flow-2 {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      #eyedrop-2 {
+        transform-origin: center top;
+        animation: tear-flow 5s infinite ease-in-out;
+      }
+
+      #eyedrop-1, #dust {
+        transform-origin: center top;
+        animation: tear-flow-2 5s infinite ease;
+      }
+
     </style>
   </defs>
   <g id="img">

@@ -17,6 +17,32 @@
       .cls-4 {
         opacity: .56;
       }
+
+      @keyframes tear-flow {
+        0% {
+          opacity: 0.5;
+          transform: translateY(-10px);
+        }
+        70% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #nose-2 {
+        transform-origin: center top;
+        animation: tear-flow 5s infinite ease-in-out;
+      }
+
+      #nose-1 {
+        transform-origin: center top;
+        animation: tear-flow 5s infinite ease-in-out;
+        animation-delay: 1s;
+      }
+
     </style>
   </defs>
   <g id="img">

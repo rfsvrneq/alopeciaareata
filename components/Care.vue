@@ -26,30 +26,30 @@ div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_
         img.my-4.mx-auto(src="../assets/img/care-img-1.svg", alt="局部治療", class="w-[160px]")
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="局部治療")
-          p.content-p.text-slate-600(class="text-[22px]") 外用皮質類固醇
+          p.content-p.text-slate-600(class="sm:text-[22px]") 外用皮質類固醇
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="局部治療")
-          p.content-p.text-slate-600(class="text-[22px]") 接觸過敏原局部免疫療法
+          p.content-p.text-slate-600(class="sm:text-[22px]") 接觸過敏原局部免疫療法
 
       .bg-white.border-3.border-blue-600.rounded-3xl.p-5
         p.textpolygon 病灶內注射
         img.my-4.mx-auto(src="../assets/img/care-img-2.svg", alt="病灶內注射", class="w-[200px]")
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="病灶內注射")
-          p.content-p.text-slate-600(class="text-[22px]") 病灶內皮質類固醇注射
+          p.content-p.text-slate-600(class="sm:text-[22px]") 病灶內皮質類固醇注射
 
       .bg-white.border-3.border-blue-600.rounded-3xl.p-5
         p.textpolygon 全身系統性治療
         img.w-48.my-4.mx-auto(src="../assets/img/care-img-3.svg", alt="全身系統性治療", class="w-[220px]")
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="全身系統性治療")
-          p.content-p.text-slate-600(class="text-[22px]") 口服JAK小分子抑制劑
+          p.content-p.text-slate-600(class="sm:text-[22px]") 口服JAK小分子抑制劑
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="全身系統性治療")
-          p.content-p.text-slate-600(class="text-[22px] tracking-tight") 口服/靜脈注射皮質類固醇
+          p.content-p.text-slate-600(class="sm:text-[22px] tracking-tight") 口服/靜脈注射皮質類固醇
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="全身系統性治療")
-          p.content-p.text-slate-600(class="text-[22px]") 免疫抑制劑
+          p.content-p.text-slate-600(class="sm:text-[22px]") 免疫抑制劑
 
     p.content-p.my-10 皮膚專科醫師會依
       span.text-red-700 嚴重程度、年齡等
@@ -74,7 +74,7 @@ div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_
         img.w-40.absolute(src="/assets/img/dialog-img-1.svg", alt="dialog", class="left-1/2 -translate-x-1/2 -top-1")
         img.absolute.bottom-0(src="/assets/img/dialog-img-2.svg", alt="dialog" class="w-16 sm:w-20 -left-10 sm:-left-14")
         img.w-6.absolute.right-0(src="/assets/img/dialog-img-3.svg", alt="dialog", class="-bottom-[1px]")
-        p.content-xs.mb-5
+        p.content-xs.mb-5.flex.items-center
           span.bg-blue-400.text-white.py-2.px-8.rounded-full.mr-4.shrink-0 真   相
           span 不能單靠洗髮精、補品就能改善圓禿。
 

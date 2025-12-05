@@ -50,7 +50,7 @@ const slides = [
     data-label="imp_section-2025obesity-news"
   >
     <div
-      class="container max-w-7xl imp_event pb-0"
+      class="max-w-6xl mx-auto imp_event pb-0"
       id="slide"
       data-title="2025obesity"
       data-label="imp_section-2025obesity-article"
@@ -59,7 +59,7 @@ const slides = [
       <BubbleTitleH2 text="相關報導"></BubbleTitleH2>
 
       <!-- 輪播設定 -->
-      <div class="relative px-28">
+      <div class="relative px-16 md:px-28">
         <swiper
           :slides-per-view="1"
           :space-between="30"
@@ -154,6 +154,9 @@ const slides = [
 .swiper-button-next, .swiper-button-prev
   width: 70px
   height: 70px
+  @media screen and (max-width: 768px)
+    width: 45px
+    height: 45px
 .swiper-button-prev:after
   transform: scaleX(-1)
 </style>

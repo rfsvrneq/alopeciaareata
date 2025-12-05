@@ -29,6 +29,20 @@
       .cls-6, .cls-7 {
         fill: #ead9b7;
       }
+
+      #hurt-1 {
+        animation: tear-flow 4s infinite ease;
+        animation-delay: -1s;
+      }
+      .cls-1 {
+        fill: #ffffff
+      }
+      @keyframes tear-flow {
+        50% {
+          opacity: 0;
+        }
+      }
+
     </style>
   </defs>
   <g id="img">

@@ -92,6 +92,130 @@
       .cls-21 {
         fill: #1b2749;
       }
+
+
+      <!-- 圓禿 -->
+      @keyframes alopecia-scale-in {
+        0% {
+          transform: scale(0);
+          opacity: 05;
+        }
+        10% {
+          transform: scale(.25);
+          opacity: .5;
+        }
+        25% {
+          transform: scale(.5);
+          opacity: 1;
+        }
+        80% {
+          transform: scale(1.25);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+
+      .alopecia-spot-2 {
+        transform-origin: 467.3px 214.19px;
+        animation: alopecia-scale-in 10s ease infinite;
+      }
+
+      .alopecia-spot-1 {
+        transform-origin: 467.47px 126.61px;
+        animation: alopecia-scale-in 10s ease infinite;
+      }
+
+      .alopecia-spot-3 {
+        transform-origin: 406.5px 149.99px;
+        animation: alopecia-scale-in 10s ease infinite;
+      }
+
+      <!-- 呼吸 -->
+      #girl-front, #girl-back {
+        animation: girl-scale 3s ease-in-out infinite;
+        transform-origin: center center;
+      }
+
+      @keyframes girl-scale {
+        50% {
+          transform: scaleY(.99);
+        }
+        0%, 100% {
+          transform: scaleY(1);
+        }
+      }
+
+      .mouth {
+        animation: mouth 3s ease-in-out infinite;
+        transform-origin: center center;
+      }
+
+      @keyframes mouth {
+        50% {
+          transform: scale(1.01) translate(-2px, 2px);
+        }
+        0%, 100% {
+          transform: scale(1) translate(0px, 0px);
+        }
+      }
+
+
+      <!-- 眉毛 -->
+      .brow, .eye {
+        animation: girl-brow 5s ease-in-out infinite;
+      }
+      .brow-2, .eye-2 {
+        animation: girl-brow-2 5s ease-in-out infinite;
+      }
+
+      @keyframes girl-brow {
+        50% {
+          transform: translate(-2px, 0px);
+        }
+        0%, 100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
+      @keyframes girl-brow-2 {
+        50% {
+          transform: translate(2px, 0px);
+        }
+        0%, 100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
+      <!-- 對話框 -->
+      #kv-line-3 {
+        animation: vibrate-1 2s ease-in-out infinite both;
+        transform-origin: 214px 122px;
+        animation-delay: -.5s;
+      }
+
+      @keyframes vibrate-1 {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-1px, 1px);
+        }
+        40% {
+          transform: translate(-1px, -1px);
+        }
+        60% {
+          transform: translate(1px, 1px);
+        }
+        80% {
+          transform: translate(1px, -1px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
     </style>
     <linearGradient id="_未命名漸層_4" data-name="未命名漸層 4" x1="947.97" y1="15419.71" x2="676.69" y2="15125.83" gradientTransform="translate(0 15293.26) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
@@ -131,7 +255,7 @@
         </g>
         <path class="cls-4" d="M711.71,492.49c0,1.03-3.37,1.86-7.52,1.86s-7.52-.83-7.52-1.86,3.37-1.86,7.52-1.86,7.52.83,7.52,1.86Z"/>
       </g>
-      <g id="girl-front">
+      <g>
         <rect class="cls-10" x="539.46" y="13.5" width="329.17" height="427.74"/>
         <g>
           <path class="cls-12" d="M525.54,0v454.74h357.01V0h-357.01ZM868.63,441.24h-329.17V13.5h329.17v427.74Z"/>
@@ -139,7 +263,7 @@
           <polygon class="cls-14" points="868.63 85.9 868.63 46.87 539.46 375.73 539.46 414.77 868.63 85.9"/>
         </g>
         <g class="cls-20">
-          <g>
+          <g id="girl-front">
             <path class="cls-5" d="M702.34,89.68c44.67,0,55.05,33.91,56.58,60.03s-2.65,22.46,6.76,39.56c9.41,17.1,1.27,24.34-1.99,32.32-3.26,7.98.37,19.68,6.09,27.26s7.01,31.19,1.68,34.04-67.77,2.98-67.77,2.98l-1.36-196.19Z"/>
             <path class="cls-5" d="M701.09,89.68c-44.67,0-55.05,33.91-56.58,60.03-1.53,26.12,2.65,22.46-6.76,39.56-9.41,17.1-1.27,24.34,1.99,32.32,3.26,7.98-.37,19.68-6.09,27.26-5.72,7.58-7.01,31.19-1.68,34.04,5.33,2.85,67.77,2.98,67.77,2.98l1.36-196.19Z"/>
             <circle class="cls-5" cx="702.37" cy="142.47" r="52.8" transform="translate(104.98 538.38) rotate(-45)"/>
@@ -183,9 +307,9 @@
               <path class="cls-5" d="M645.2,434.83c-.1-.04-10.59-3.95-20.05-9.37l.42-.74c9.39,5.38,19.82,9.27,19.92,9.31l-.3.8Z"/>
             </g>
             <polygon class="cls-11" points="592.43 399 577.36 428.17 582.73 435.86 571.66 439.19 566.28 447.72 589.81 451.21 610.89 410.42 592.43 399"/>
-            <path class="cls-5" d="M715.33,166.95c0-1.73,1.4-3.12,3.12-3.12s3.12,1.4,3.12,3.12-1.4,3.12-3.12,3.12-3.12-1.4-3.12-3.12Z"/>
-            <path class="cls-5" d="M682.74,166.95c0-1.73,1.4-3.12,3.12-3.12s3.12,1.4,3.12,3.12-1.4,3.12-3.12,3.12-3.12-1.4-3.12-3.12Z"/>
-            <path class="cls-11" d="M710.24,197.74c.1-.49.16-.99.16-1.5,0-4.46-3.92-8.08-8.75-8.08s-8.75,3.62-8.75,8.08c0,.51.06,1.02.16,1.5h17.18Z"/>
+            <path class="cls-5 eye" d="M715.33,166.95c0-1.73,1.4-3.12,3.12-3.12s3.12,1.4,3.12,3.12-1.4,3.12-3.12,3.12-3.12-1.4-3.12-3.12Z"/>
+            <path class="cls-5 eye-2" d="M682.74,166.95c0-1.73,1.4-3.12,3.12-3.12s3.12,1.4,3.12,3.12-1.4,3.12-3.12,3.12-3.12-1.4-3.12-3.12Z"/>
+            <path class="cls-11 mouth" d="M710.24,197.74c.1-.49.16-.99.16-1.5,0-4.46-3.92-8.08-8.75-8.08s-8.75,3.62-8.75,8.08c0,.51.06,1.02.16,1.5h17.18Z"/>
             <g>
               <g id="pilgarlic-5">
                 <ellipse class="cls-7" cx="715.63" cy="113.01" rx="7.65" ry="4.92"/>
@@ -216,8 +340,8 @@
                 </g>
               </g>
             </g>
-            <path class="cls-5" d="M729.22,161.91c-4.72-1.5-10.61-2.39-16.63-2.66,0,0,.99-3.81,8.72-2.53,7.73,1.27,7.91,5.2,7.91,5.2Z"/>
-            <path class="cls-5" d="M682.79,156.72c7.73-1.28,8.72,2.53,8.72,2.53-6.01.27-11.91,1.16-16.63,2.66,0,0,.18-3.92,7.91-5.2Z"/>
+            <path class="cls-5 brow" d="M729.22,161.91c-4.72-1.5-10.61-2.39-16.63-2.66,0,0,.99-3.81,8.72-2.53,7.73,1.27,7.91,5.2,7.91,5.2Z"/>
+            <path class="cls-5 brow-2" d="M682.79,156.72c7.73-1.28,8.72,2.53,8.72,2.53-6.01.27-11.91,1.16-16.63,2.66,0,0,.18-3.92,7.91-5.2Z"/>
             <path class="cls-16" d="M704.08,181.13c-2.52-.18-4.17-1.08-4.91-2.69-1.82-3.97,3.15-10.7,3.36-10.98l1.23.91c-1.3,1.74-4.39,6.82-3.2,9.44.48,1.05,1.7,1.66,3.62,1.8l-.11,1.52Z"/>
           </g>
         </g>
@@ -251,7 +375,7 @@
         </g>
         <g>
           <g id="pilgarlic-3">
-            <ellipse class="cls-7" cx="406.58" cy="149.99" rx="15.93" ry="10.24"/>
+            <ellipse class="cls-7 alopecia-spot-3" cx="406.58" cy="149.99" rx="15.93" ry="10.24"/>
             <g>
               <path class="cls-5" d="M410.02,156.82c-.01-.06-.02-.11-.02-.17,0-.52.45-.93,1.01-.93s1.01.42,1.01.93c0,.06,0,.12-.02.17h-1.99Z"/>
               <path class="cls-5" d="M398.64,157.95c-.01-.06-.02-.11-.02-.17,0-.52.45-.93,1.01-.93s1.01.42,1.01.93c0,.06,0,.12-.02.17h-1.99Z"/>
@@ -265,7 +389,7 @@
             </g>
           </g>
           <g id="pilgarlic-2">
-            <ellipse class="cls-7" cx="467.3" cy="214.19" rx="23.65" ry="21.44"/>
+            <ellipse class="cls-7 alopecia-spot-2" cx="467.3" cy="214.19" rx="23.65" ry="21.44"/>
             <g>
               <path class="cls-5" d="M472.39,228.48c-.02-.12-.03-.24-.03-.36,0-1.08.67-1.96,1.5-1.96s1.5.88,1.5,1.96c0,.12-.01.25-.03.36h-2.95Z"/>
               <path class="cls-5" d="M455.5,230.86c-.02-.12-.03-.24-.03-.36,0-1.08.67-1.96,1.5-1.96s1.5.88,1.5,1.96c0,.12-.01.25-.03.36h-2.95Z"/>
@@ -279,7 +403,7 @@
             </g>
           </g>
           <g id="pilgarlic-1">
-            <ellipse class="cls-7" cx="467.47" cy="126.61" rx="9.67" ry="6.22"/>
+            <ellipse class="cls-7 alopecia-spot-1" cx="467.47" cy="126.61" rx="9.67" ry="6.22"/>
             <g>
               <path class="cls-5" d="M469.32,131.1s-.01-.07-.01-.1c0-.31.27-.56.61-.56s.61.25.61.56c0,.04,0,.07-.01.1h-1.19Z"/>
               <path class="cls-5" d="M462.5,131.78s-.01-.07-.01-.1c0-.31.27-.56.61-.56s.61.25.61.56c0,.04,0,.07-.01.1h-1.19Z"/>

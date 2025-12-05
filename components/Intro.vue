@@ -4,7 +4,7 @@
 //- 前言
 div#intro.bg-blue-100.z-10.relative(class="imp_event" data-title="2025obesity" data-label="imp_section-2025obesity-home")
   .container
-    img.w-6.mx-auto.mb-10(src="../assets/img/intro-img-1.svg", alt="icon" class="w-10 sm:w-16")
+    img.mx-auto.mb-10(src="../assets/img/intro-img-1.svg", alt="icon" class="w-6")
     
     .content-p.text-center.gasp-fade
       p.inline(class="sm:block") 睡一覺起來，頭髮竟缺了一塊！ 
@@ -27,7 +27,7 @@ div#intro.bg-blue-100.z-10.relative(class="imp_event" data-title="2025obesity" d
 @use '~/assets/sass/colors' as *
 
 #intro
-  clip-path: ellipse(150% 100% at 50% 100%)
+  clip-path: ellipse(130% 100% at 50% 100%)
   margin-top: -13.7rem
   +m-768
     clip-path: ellipse(200% 100% at 50% 100%)

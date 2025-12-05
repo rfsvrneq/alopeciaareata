@@ -23,10 +23,10 @@
   }
 
   .content-p {
-    @apply text-[20px] xs:text-[20px] sm:text-[24px] lg:text-[26px] leading-relaxed sm:leading-loose font-genjyuu-bold;
+    @apply text-[19px] xs:text-[20px] sm:text-[24px] lg:text-[26px] leading-relaxed sm:leading-loose font-genjyuu-bold;
   }
   .content-h4 {
-    @apply text-[24px] xs:text-[28px] sm:text-[36px] leading-normal text-center font-genjyuu-bold text-blue-700 mt-10;
+    @apply text-[23px] xs:text-[28px] sm:text-[36px] leading-normal text-center font-genjyuu-bold text-blue-700 mt-10;
   }
 
   .content-xs {
@@ -34,7 +34,7 @@
   }
 
   .content-sm {
-    @apply text-[20px] xs:text-[21px] text-slate-600;
+    @apply text-[19px] xs:text-[21px] text-slate-600;
   }
   sup {
     @apply align-super text-[12px];

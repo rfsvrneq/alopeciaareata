@@ -37,7 +37,7 @@ html, body, #smooth-wrapper
   left: 0
   width: 100%
   height: 100%
-  background: #e1d6c1
+  background: #7794e5
   display: flex
   align-items: center
   justify-content: center
@@ -46,7 +46,7 @@ html, body, #smooth-wrapper
 .spinner
   width: 48px
   height: 48px
-  border: 4px solid #bca779
+  border: 4px solid #a4b3dd
   border-top-color: #fff
   border-radius: 50%
   animation: spin 1s linear infinite

@@ -37,6 +37,30 @@
       .cls-9 {
         fill: #fbea4f;
       }
+
+      #sun {
+          transform-origin: 35.58px 35.26px;
+          animation: rotate-center 10s linear infinite;
+        }
+      @keyframes rotate-center {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #hurt-1, #hurt-2 {
+        animation: tear-flow 4s infinite ease;
+        animation-delay: -.5s;
+      }
+      @keyframes tear-flow {
+        50% {
+          opacity: 0;
+        }
+      }
+
     </style>
   </defs>
   <g id="img">

@@ -13,10 +13,21 @@
       .cls-3 {
         fill: #fae6e5;
       }
+
+      #icon {
+          transform-origin: center center;
+          animation: tear-flow 8s linear infinite;
+        }
+      @keyframes tear-flow {
+        50% {
+          opacity: 0;
+        }
+      }
+
     </style>
   </defs>
   <g id="_圖層_1-2" data-name="圖層 1">
-    <g>
+    <g id="icon">
       <path class="cls-1" d="M12.11,55.83h0c-5.88-4.31-7.16-12.57-2.85-18.45L32.66,5.41c4.31-5.88,12.57-7.16,18.45-2.86h0c5.88,4.31,7.16,12.57,2.85,18.45l-23.4,31.97c-4.31,5.88-12.57,7.16-18.45,2.86Z"/>
       <path class="cls-2" d="M42.26,36.99l-21.31-15.6,11.7-15.98c4.31-5.88,12.57-7.16,18.45-2.86h0c5.88,4.31,7.16,12.57,2.85,18.45l-11.7,15.98Z"/>
       <rect class="cls-3" x="29.45" y="15.98" width="4.31" height="26.41" transform="translate(-10.61 37.45) rotate(-53.8)"/>

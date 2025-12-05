@@ -33,7 +33,7 @@ const nav = [
   {
     title: "拯救圓禿保衛戰",
     active: false,
-    type: "#guide",
+    type: "https://www.derma.org.tw/resources/content.php?id=120",
     label: "menu_拯救圓禿保衛戰",
   },
 ];
@@ -79,6 +79,9 @@ const moveTo = (ta) => {
 //- a#go.click_event(@click.prevent="moveTo('#experts')" data-title="2025obesity" data-label="click-LiliBMI-btn-calculator-expert4")
   img(src="/assets/img/go.svg", alt="go")
 
+a(href="https://www.derma.org.tw/resources/content.php?id=120" target="_blank")
+  img(src="/assets/img/hair.svg", alt="go")
+
 
 div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
   
@@ -100,23 +103,46 @@ div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
       //-選單
       .nav
         .item
+          template(v-for="(item, index) in nav" :key="index")
+            //- 錨點：內部移動
+            a.click_event(
+              v-if="!item.type.startsWith('http')"
+              :href="item.type"
+              :class="{ 'active': isActive === item.type }"
+              :data-label="item.label"
+              v-html="item.title"
+              @click.prevent="moveTo(item.type)"
+            )
+
+            //- 外部連結：正常開新分頁
+            a.click_event(
+              v-else
+              :href="item.type"
+              target="_blank"
+              rel="noopener noreferrer"
+              :data-label="item.label"
+              v-html="item.title"
+            )
+
+      //- .nav
+        .item    
           a.click_event(
             data-title="2025obesity"
             v-for="(nav, index) in nav"
+            :key="index"
             :href="nav.type"
-            :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }"
+            :class="{ 'active': isActive === nav.type }"
             @click.prevent="moveTo(nav.type)"
             :data-label="nav.label"
             v-html="nav.title"
           )
-          
 </template>
 
 <style scoped lang="sass">
 @use '~/assets/sass/media' as *
 
 $nav-item-a: #3d4654 !default
-$nav-item-a-hover: #dd4545 !default
+$nav-item-a-hover: #607af1 !default
 $nav-wrap-bg: #bdd1f9 !default
 $burger: #985545 !default
 $nav-wrap-bg-mobile: #7794e5 !default
@@ -128,11 +154,15 @@ $nav-item-a-hover-mobile: white !default
   height: auto
   z-index: 20
   background: $nav-wrap-bg
+  a
+    padding: 1.25rem 0
   &.scrolled
-    background-color: rgba(white, .5)
+    background-color: rgba($nav-wrap-bg, .5)
     backdrop-filter: blur(10px)
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
-    transition: background-color .3s ease, padding .3s ease
+    border-bottom: 1px solid rgba(255, 255, 255, .85)
+    a
+      padding: .5rem 0
+      transition: background-color .3s ease, padding .3s ease
   .item
     position: relative
     +m-1024-up
@@ -150,13 +180,13 @@ $nav-item-a-hover-mobile: white !default
       +m-1024-up
         &:last-child
           color: white
-          padding: 1.25rem 2.75rem
+          padding: 0rem 2.75rem
           display: flex
           flex-direction: column
           text-align: center
           position: relative
           line-height: 1.25
-          margin-top: -.35rem
+          margin-top: -.25rem
           &::after
             content: "‒ 就醫諮詢 ‒"
             font-size: 1.3rem
@@ -167,7 +197,7 @@ $nav-item-a-hover-mobile: white !default
             height: 115px
             position: absolute
             z-index: -1
-            top: -20px
+            top: -30px
             left: 0
             border-bottom-left-radius: 999px
             border-bottom-right-radius: 999px
