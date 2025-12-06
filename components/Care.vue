@@ -6,22 +6,22 @@ import BubbleTitleH4 from "./ui/BubbleTitleH4.vue";
 </script>
 
 <template lang="pug">
-//- 圓禿治療要及早
-div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_section-2025obesity-home")
+//- 治療與行動 圓禿治療要及早
+div#care.bg-amber-50(class="imp_event" data-title="alopeciaareata" data-label="imp_section-alopeciaareata-care")
   .container
 
     //- 引用標題元件
     BubbleTitleH2(text='圓禿治療要及早<sup>10</sup>')
 
-    p.content-p 圓禿治療目標以
+    p.content-p.gs-fade 圓禿治療目標以
       span.text-red-700 改善病人頭髮覆蓋的程度
       | 為主要訴求，醫師會依照禿髮的面積大小、掉髮進行的速度、持續時間及對病人造成的身心壓力程度決定治療方針。醫界普遍認為，圓禿是一種需要積極治療的疾病，病人患病後越早開始治療越好，延遲就醫可能讓病灶擴大或頻繁復發，甚至演變成全頭或全身性落髮。
 
     //- 引用標題元件
     BubbleTitleH3(text='臨床上，常見的圓禿治療方法包含')
 
-    .grid.gap-x-6.gap-y-10(class="grid-cols-1 xs:grid-cols-2 lg:gap-y-0 lg:grid-cols-3")
-      .bg-white.border-3.border-blue-600.rounded-3xl.p-5
+    .grid.gap-x-6.gap-y-10(class="grid-cols-1 sm:grid-cols-2 lg:gap-y-0 lg:grid-cols-3")
+      .bg-white.border-3.border-blue-600.rounded-3xl.p-5.gs-fade
         p.textpolygon 局部治療
         img.my-4.mx-auto(src="../assets/img/care-img-1.svg", alt="局部治療", class="w-[160px]")
         .flex(class="justify-start")
@@ -31,14 +31,14 @@ div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="局部治療")
           p.content-p.text-slate-600(class="sm:text-[22px]") 接觸過敏原局部免疫療法
 
-      .bg-white.border-3.border-blue-600.rounded-3xl.p-5
+      .bg-white.border-3.border-blue-600.rounded-3xl.p-5.gs-fade
         p.textpolygon 病灶內注射
         img.my-4.mx-auto(src="../assets/img/care-img-2.svg", alt="病灶內注射", class="w-[200px]")
         .flex(class="justify-start")
           img.w-8.-mt-2(src="../assets/img/care-icon.svg", alt="病灶內注射")
           p.content-p.text-slate-600(class="sm:text-[22px]") 病灶內皮質類固醇注射
 
-      .bg-white.border-3.border-blue-600.rounded-3xl.p-5
+      .bg-white.border-3.border-blue-600.rounded-3xl.p-5.gs-fade
         p.textpolygon 全身系統性治療
         img.w-48.my-4.mx-auto(src="../assets/img/care-img-3.svg", alt="全身系統性治療", class="w-[220px]")
         .flex(class="justify-start")
@@ -55,7 +55,7 @@ div#care.bg-amber-50(class="imp_event" data-title="2025obesity" data-label="imp_
       span.text-red-700 嚴重程度、年齡等
       | ，選擇不同的治療策略：
 
-    .grid(class="grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-36")
+    .grid(class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-36")
       h4
         img.my-4.mx-auto(src="../assets/img/care-img-4.svg", alt="治療策略", class="w-10/12")
         p.content-p 以外用或局部注射皮質類固醇為主，可合併Minoxidil幫助毛髮再生。若為兒童患者，通常採用低效力外用藥膏以降低副作用。

@@ -5,39 +5,39 @@ import BubbleTitleH4 from "./ui/BubbleTitleH4.vue";
 </script>
 
 <template lang="pug">
-//- 前言
-div#who.bg-blue-100(class="imp_event" data-title="2025obesity" data-label="imp_section-2025obesity-home")
+//- 誰會得圓禿？
+div#who.bg-blue-100(class="imp_event" data-title="alopeciaareata" data-label="imp_section-alopeciaareata-who")
   .container
 
     //- 引用標題元件
     BubbleTitleH2(text="誰會得圓禿？有多嚴重呢？")
 
-    p.content-p 圓禿沒有特定的年齡或性別限制，任何人都有可能發生。研究顯示，大約 1.7% 至 2.1%的人一生中會經歷圓禿，其中六成以上在 30 歲以前就發病
+    p.content-p.gs-fade 圓禿沒有特定的年齡或性別限制，任何人都有可能發生。研究顯示，大約 1.7% 至 2.1%的人一生中會經歷圓禿，其中六成以上在 30 歲以前就發病
       sup 4
       | ，尤其好發於 25 至 29 歲的青壯年
       sup 5
       | ，在亞洲甚至有高達八成以上患者在 40 歲前出現症狀。
       sup 6
     
-    p.content-p.mt-8 若家族中有人患有圓禿或其他自體免疫疾病，如甲狀腺疾病、白斑、異位性皮膚炎，罹病的機率也會增加。其餘因感染、用藥、心理創傷或急性壓力等，都可能成為誘發或加劇圓禿。此外，研究也發現圓禿患者罹患焦慮、憂鬱與睡眠障礙的風險更高。
+    p.content-p.mt-8.gs-fade 若家族中有人患有圓禿或其他自體免疫疾病，如甲狀腺疾病、白斑、異位性皮膚炎，罹病的機率也會增加。其餘因感染、用藥、心理創傷或急性壓力等，都可能成為誘發或加劇圓禿。此外，研究也發現圓禿患者罹患焦慮、憂鬱與睡眠障礙的風險更高。
     
-    p.content-p.mt-8 圓禿的嚴重程度從局部斑塊到全頭、甚至全身毛髮脫落不等，醫學上以頭皮落髮面積比例(SALT 指數)來評估
+    p.content-p.mt-8.gs-fade 圓禿的嚴重程度從局部斑塊到全頭、甚至全身毛髮脫落不等，醫學上以頭皮落髮面積比例(SALT 指數)來評估
       sup 7
       | ：
 
 
-    .grid.gap-14.mt-10.text-slate-600(class="text-[19px] sm:text-[22px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3")
+    .grid.gap-14.mt-10.text-slate-600.gs-fade(class="text-[19px] sm:text-[22px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3")
       p
-        img(src="../assets/img/who-img-1.svg", alt="alt", class="w-10/12 md:w-11/12 mx-auto mb-4")
+        img(src="../assets/img/who-img-1.svg", alt="alt", class="w-9/12 md:w-11/12 mx-auto mb-4")
         span 落髮面積小於 20%，多數可自行恢復或經治療改善。
       p
-        img(src="../assets/img/who-img-2.svg", alt="alt", class="w-10/12 md:w-11/12 mx-auto mb-4")
+        img(src="../assets/img/who-img-2.svg", alt="alt", class="w-9/12 md:w-11/12 mx-auto mb-4")
         span 落髮面積介於 20% 到 50%，需配合藥物治療控制。
       p
-        img(src="../assets/img/who-img-3.svg", alt="alt", class="w-10/12 md:w-11/12 mx-auto mb-4")
+        img(src="../assets/img/who-img-3.svg", alt="alt", class="w-9/12 md:w-11/12 mx-auto mb-4")
         span.tracking-tight 超過 50% 的頭皮毛髮脫落，部分會進展為頭髮全數脫落的「全頭禿」，甚至「全身禿」。
 
-    p.content-p.mt-8 圓禿除了會帶來外觀的改變，許多患者同時也會出現焦慮、憂鬱或睡眠障礙，影響生活品質與自信心。圓禿的治療不僅是讓頭髮重新長回，更重要的是從免疫與心理兩個層面調整體質與壓力反應，恢復身心的平衡狀態。
+    p.content-p.mt-8.gs-fade 圓禿除了會帶來外觀的改變，許多患者同時也會出現焦慮、憂鬱或睡眠障礙，影響生活品質與自信心。圓禿的治療不僅是讓頭髮重新長回，更重要的是從免疫與心理兩個層面調整體質與壓力反應，恢復身心的平衡狀態。
 
     //- 引用標題元件 '單引號' 包裹 sup 標籤
     BubbleTitleH4(no='常見迷思二' text='圓禿只會發生在成人？')

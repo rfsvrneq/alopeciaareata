@@ -7,34 +7,33 @@ import Slide from "@/components/Slide/index.vue";
 div.overflow-x-hidden
   Navbar
 
-  div#smooth-wrapper
-    div#smooth-content
-      //- 主視覺
-      Kv
+  div
+    //- 主視覺
+    Kv
 
-      //- 前言
-      Intro
+    //- 前言
+    Intro
 
-      //- 認識圓禿
-      Comorb
+    //- 認識圓禿
+    Comorb
 
-      //- 誰會得圓禿
-      Who
+    //- 誰會得圓禿
+    Who
 
-      //- 圓禿的影響
-      Impact
-      
-      //- 治療與行動
-      Care
+    //- 圓禿的影響
+    Impact
+    
+    //- 治療與行動
+    Care
 
-      //- 就醫諮詢
-      Consult
+    //- 就醫諮詢
+    Consult
 
-      //- 文章
-      Slide
+    //- 文章
+    Slide
 
-      //- FOOTER
-      Footer
+    //- FOOTER
+    Footer
 
 
 </template>

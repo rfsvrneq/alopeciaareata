@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template lang="pug">
 
-.ttl-dialog.gs-fade.mb-8
+.ttl-dialog.mb-8
   h4
     span(v-html="no")
     span(v-html="text")

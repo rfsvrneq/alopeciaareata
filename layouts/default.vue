@@ -25,11 +25,9 @@ onMounted(async () => {
 
 <style scoped lang="sass">
 // smooth設定
-html, body, #smooth-wrapper
+html, body
   height: 100%
   overflow: hidden
-#smooth-content
-  overflow: visible
 
 .loading-overlay
   position: fixed

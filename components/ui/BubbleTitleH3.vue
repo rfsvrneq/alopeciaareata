@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template lang="pug">
 
-.ttl-round.gs-fade
+.ttl-round
   h3(v-html="text")
 
 </template>

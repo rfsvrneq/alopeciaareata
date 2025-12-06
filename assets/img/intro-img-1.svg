@@ -5,9 +5,25 @@
       .cls-1 {
         fill: #91b0f8;
       }
+
+      .slide-in-bottom {
+        animation: slide-in-bottom 2s ease-in-out infinite;
+        transform-origin: center center;
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          transform: translateY(-55px);
+        }
+        50%{
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(55px);
+        }
+      }
     </style>
   </defs>
   <g id="_圖層_1-2" data-name="圖層 1">
-    <path class="cls-1" d="M.73,39.78l13.53,13.53c.96.96,2.53.96,3.49,0l13.53-13.53c1.55-1.55.45-4.21-1.74-4.21h-3.99c-1.36,0-2.47-1.1-2.47-2.47V2.47c0-1.36-1.1-2.47-2.47-2.47h-9.22c-1.36,0-2.47,1.1-2.47,2.47v30.63c0,1.36-1.1,2.47-2.47,2.47h-3.98c-2.2,0-3.3,2.66-1.74,4.21Z"/>
+    <path class="cls-1 slide-in-bottom" d="M.73,39.78l13.53,13.53c.96.96,2.53.96,3.49,0l13.53-13.53c1.55-1.55.45-4.21-1.74-4.21h-3.99c-1.36,0-2.47-1.1-2.47-2.47V2.47c0-1.36-1.1-2.47-2.47-2.47h-9.22c-1.36,0-2.47,1.1-2.47,2.47v30.63c0,1.36-1.1,2.47-2.47,2.47h-3.98c-2.2,0-3.3,2.66-1.74,4.21Z"/>
   </g>
 </svg>

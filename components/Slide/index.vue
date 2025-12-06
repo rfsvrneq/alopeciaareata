@@ -7,7 +7,7 @@ const slides = [
     imgSrc:
       "https://as.chdev.tw/web/article/6/f/4/6add82df-fe48-48b3-b57d-8356d4b52f7c1691133545.jpg",
     title: "禿頭3大原因與前兆，禿頭有救嗎？掌握禿頭治療與預防",
-    label: "click-2025obesity-article-commonhealth-88553",
+    label: "click-alopeciaareata-article-commonhealth-88553",
   },
   {
     url: "https://www.commonhealth.com.tw/article/92941",
@@ -15,29 +15,29 @@ const slides = [
       "https://as.chdev.tw/web/article/d/f/4/da27d549-fa3a-4065-96d6-eb865defc5a21754273287.webp",
     title:
       "掉髮愈治愈嚴重？當心你得了「這種禿」，醫破除迷思：別再找「植髮專科」！",
-    label: "click-2025obesity-article-commonhealth-92941",
+    label: "click-alopeciaareata-article-commonhealth-92941",
   },
   {
     url: "https://www.commonhealth.com.tw/article/90560",
     imgSrc:
-      "https://as.chdev.tw/web/article/d/f/4/da27d549-fa3a-4065-96d6-eb865defc5a21754273287.webp",
+      "https://as.chdev.tw/web/article/4/9/4/49e06e2e-9457-43b1-8ab1-b386ded9975b1726041981.jpg",
     title:
       "25歲女「鬼剃頭」天天以淚洗面，醫：圓禿千萬別用生髮水！3方法助長新髮",
-    label: "click-2025obesity-article-commonhealth-90560",
+    label: "click-alopeciaareata-article-commonhealth-90560",
   },
   {
     url: "https://www.commonhealth.com.tw/article/87991",
     imgSrc:
       "https://as.chdev.tw/web/article/b/1/4/b4a23b67-1b58-4983-b49b-86289ab18cca1682069600.jpg",
     title: "鬼剃頭」被疑罹怪病！徐乃麟女兒圓形禿　新藥可有效治療",
-    label: "click-2025obesity-article-commonhealth-87991",
+    label: "click-alopeciaareata-article-commonhealth-87991",
   },
   {
     url: "https://www.commonhealth.com.tw/article/82711",
     imgSrc:
       "https://as.chdev.tw/web/article/1/7/4/1504f08a-7140-4106-91de-e6e501e437f71642649945.jpg",
     title: "頭皮禿一塊「鬼剃頭」怎麼辦？中醫：掉髮、班禿從3方面改善",
-    label: "click-2025obesity-article-commonhealth-82711",
+    label: "click-alopeciaareata-article-commonhealth-82711",
   },
 ];
 </script>
@@ -46,14 +46,14 @@ const slides = [
   <div
     class="bg-amber-50 imp_event"
     id="reports"
-    data-title="2025obesity"
-    data-label="imp_section-2025obesity-news"
+    data-title="alopeciaareata"
+    data-label="imp_section-alopeciaareata-news"
   >
     <div
       class="max-w-6xl mx-auto imp_event pb-0"
       id="slide"
-      data-title="2025obesity"
-      data-label="imp_section-2025obesity-article"
+      data-title="alopeciaareata"
+      data-label="imp_section-alopeciaareata-article"
     >
       <!-- 引用標題元件 -->
       <BubbleTitleH2 text="相關報導"></BubbleTitleH2>
@@ -109,7 +109,7 @@ const slides = [
           >
             <a
               class="click_event"
-              data-title="2025obesity"
+              data-title="alopeciaareata"
               :data-label="slide.label"
               :href="slide.url"
               target="_blank"

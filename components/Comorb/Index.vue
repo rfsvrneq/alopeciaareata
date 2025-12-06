@@ -43,13 +43,13 @@ const tabComponents = {
 
 <template lang="pug">
 //- 認識圓禿
-#about.bg-blue-100(class="imp_event" data-title="2025obesity" data-label="imp_section-2025obesity-comorbidity")
+#about.bg-blue-100(class="imp_event" data-title="alopeciaareata" data-label="imp_section-alopeciaareata-about")
 
   .container
     //- 引用標題元件
     BubbleTitleH2(text="圓禿是自體免疫失衡造成的毛髮脫落疾病")
 
-    .content-p.text-justify
+    .content-p.text-justify.gs-fade
       p 圓禿是一種自體免疫疾病，根據統計，全球約 2% 的人飽受圓禿之苦
         sup 1 
         | ，在台灣推測有40萬人被診斷圓禿
@@ -61,7 +61,7 @@ const tabComponents = {
     
     //- TAB
     .tabs-table
-      div.click_event.section-wrap(v-for='(tab, index) in tabs' :key='index' @click='changeTab(tab.key)' :class="{ 'active': activeTab === tab.key }", data-title="2025obesity", :data-label="tab.label")
+      div.click_event.section-wrap(v-for='(tab, index) in tabs' :key='index' @click='changeTab(tab.key)' :class="{ 'active': activeTab === tab.key }", data-title="alopeciaareata", :data-label="tab.label")
         span.section-label {{ tab.title }}
 
     .tabs-table-content.mx-auto
@@ -171,7 +171,7 @@ const tabComponents = {
   z-index: 1
   position: relative
   +m-1024
-    padding: 1rem 1rem 0rem 1rem
+    padding: 1.5rem 1.5rem 0rem 1.5rem
 
 // 分頁淡入淡出效果
 .fade-enter-active, .fade-leave-active

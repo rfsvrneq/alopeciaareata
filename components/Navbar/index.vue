@@ -75,13 +75,12 @@ const moveTo = (ta) => {
 </script>
 
 <template lang="pug">
-//- go
-//- a#go.click_event(@click.prevent="moveTo('#experts')" data-title="2025obesity" data-label="click-LiliBMI-btn-calculator-expert4")
+//- float
+//- a#float.click_event(@click.prevent="moveTo('#experts')" data-title="alopeciaareata" data-label="click-LiliBMI-btn-calculator-expert4")
   img(src="/assets/img/go.svg", alt="go")
 
-a(href="https://www.derma.org.tw/resources/content.php?id=120" target="_blank")
-  img(src="/assets/img/hair.svg", alt="go")
-
+a#float.click_event(href="https://www.derma.org.tw/resources/content.php?id=120" target="_blank" data-title="alopeciaareata" data-label="click-alopeciaareata-btn-float")
+  img(src="/assets/img/hair.svg", alt="立即諮詢")
 
 div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
   
@@ -107,6 +106,7 @@ div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
             //- 錨點：內部移動
             a.click_event(
               v-if="!item.type.startsWith('http')"
+              data-title="alopeciaareata"
               :href="item.type"
               :class="{ 'active': isActive === item.type }"
               :data-label="item.label"
@@ -117,6 +117,7 @@ div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
             //- 外部連結：正常開新分頁
             a.click_event(
               v-else
+              data-title="alopeciaareata"
               :href="item.type"
               target="_blank"
               rel="noopener noreferrer"
@@ -127,7 +128,7 @@ div#topbar(:class="['w-full fixed top-0 left-0', { scrolled: scrollActive }]")
       //- .nav
         .item    
           a.click_event(
-            data-title="2025obesity"
+            data-title="alopeciaareata"
             v-for="(nav, index) in nav"
             :key="index"
             :href="nav.type"
@@ -154,15 +155,15 @@ $nav-item-a-hover-mobile: white !default
   height: auto
   z-index: 20
   background: $nav-wrap-bg
-  a
-    padding: 1.25rem 0
+  padding: 1.25rem 0
+  +m-1024
+    padding: .5rem 1rem
   &.scrolled
     background-color: rgba($nav-wrap-bg, .5)
     backdrop-filter: blur(10px)
     border-bottom: 1px solid rgba(255, 255, 255, .85)
-    a
-      padding: .5rem 0
-      transition: background-color .3s ease, padding .3s ease
+    padding: .5rem 1rem
+    transition: background-color .3s ease, padding .3s ease
   .item
     position: relative
     +m-1024-up
@@ -177,6 +178,8 @@ $nav-item-a-hover-mobile: white !default
         color: $nav-item-a-hover
         span
           color: $nav-item-a-hover
+
+      // 外站連結 桌機額外樣式
       +m-1024-up
         &:last-child
           color: white
@@ -201,6 +204,9 @@ $nav-item-a-hover-mobile: white !default
             left: 0
             border-bottom-left-radius: 999px
             border-bottom-right-radius: 999px
+          &:hover
+            &::before
+              background: #607af1
 
   //-行動裝置漢堡與導覽列
   @media screen and (max-width: 1024px)
@@ -216,7 +222,6 @@ $nav-item-a-hover-mobile: white !default
       width: 40px
       height: 40px
       outline: 0
-      margin-top: .2rem
       &, & span
         transition: .2s
         backface-visibility: hidden
@@ -227,6 +232,7 @@ $nav-item-a-hover-mobile: white !default
         width: 100%
         height: 2px
         background: $burger
+
 
       //open
       &.active
@@ -301,29 +307,27 @@ $nav-item-a-hover-mobile: white !default
         .last
           bottom: 10px
 
-#go
+// 外連結
+#float
   position: fixed
   bottom: 10%
   right: 1rem
-  width: 140px
-  height: 140px
+  width: 180px
+  height: auto
   z-index: 20
   display: flex
   justify-content: center
   align-items: center
-  border-radius: 50%
   cursor: pointer
-  box-shadow: 4px 6px 8px rgba(black, .2)
   transition: all ease .1s
   img
     width: 100%
-    border-radius: 50%
-    overflow: hidden
   &:hover
-    border: 4px solid white
+    transition: all ease .1s
+    transform: translateY(5px)
   +m-768
-    width: 100px
-    height: 100px
+    width: 140px
+    height: 140px
     bottom: .5rem
     right: .5rem
 </style>
