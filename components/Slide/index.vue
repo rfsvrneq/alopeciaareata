@@ -43,12 +43,7 @@ const slides = [
 </script>
 
 <template>
-  <div
-    class="bg-amber-50 imp_event"
-    id="reports"
-    data-title="alopeciaareata"
-    data-label="imp_section-alopeciaareata-news"
-  >
+  <div class="bg-amber-50">
     <div
       class="max-w-6xl mx-auto imp_event pb-0"
       id="slide"

@@ -27,18 +27,20 @@ div#consult.bg-amber-50(class="imp_event" data-title="alopeciaareata" data-label
 
     h4.flex.items-start.gs-fade.mt-10
       img(src="../assets/img/consult-img-3.svg" alt="留意心理狀況" class="w-24 mr-8")
-      p.content-sm 討論治療選擇：
+      p.content-sm 留意心理狀況：
         span.block 圓禿患者的焦慮與憂鬱盛行率明顯較高。若出現情緒低落、失眠或社交退縮等現象，可向醫師反映，必要時轉介心理師或精神科協助。
 
-    h4.flex.items-start.gs-fade.mt-10
+    h4.flex.items-start.gs-fade.my-10
       img(src="../assets/img/consult-img-4.svg" alt="定期回診追蹤" class="w-24 mr-8")
       p.content-sm 定期回診追蹤：
         span.block 圓禿容易復發，即使症狀改善，也需依醫師建議持續追蹤。穩定期可間隔三個月到六個月回診，確保免疫狀態維持平衡。
 
-    a.click_event(href="https://www.derma.org.tw/resources/content.php?id=120" class="bg-blue-600 p-2 rounded-xl flex justify-between items-center w-11/12 sm:w-80 mx-auto mt-10 hover:bg-orange-400" target="_blank" data-title="alopeciaareata" data-label="click-alopeciaareata-btn")
-      img.w-16.inline(src="../assets/img/line-img.svg" alt="圓禿就醫地圖")
-      span.content-p.text-white 圓禿就醫地圖
-      img.inline.w-5.mr-4(src="../assets/img/line-img-2.svg" alt="圓禿就醫地圖")
+    .text-center
+      a.click_event.link-btn(href="https://www.derma.org.tw/resources/content.php?id=120" target="_blank" data-title="alopeciaareata" data-label="click-alopeciaareata-btn")
+        div(class="bg-blue-600 p-2 rounded-xl flex justify-between items-center w-11/12 sm:w-80 mx-auto hover:bg-orange-400")
+          img.w-16.inline(src="../assets/img/line-img.svg" alt="圓禿就醫地圖")
+          span.content-p.text-white 圓禿就醫地圖
+          img.inline.w-5.mr-4(src="../assets/img/line-img-2.svg" alt="圓禿就醫地圖")
 
 
 </template>
@@ -46,4 +48,23 @@ div#consult.bg-amber-50(class="imp_event" data-title="alopeciaareata" data-label
 <style scoped lang="sass">
 @use '~/assets/sass/media' as *
 @use '~/assets/sass/colors' as *
+.link-btn
+  position: relative
+  z-index: 1
+  display: inline-block
+  &::after
+    z-index: -1
+    position: absolute
+    content: ''
+    background-color: white
+    border: 3px solid $blue-600
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    bottom: -10px
+    left: 10px
+    box-shadow: 0px 0px 5px rgba(black, .5)
+  &:hover
+    &::after
+      border: 3px solid $orange-400
 </style>

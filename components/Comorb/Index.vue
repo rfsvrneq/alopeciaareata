@@ -13,17 +13,17 @@ const tabs = ref([
   {
     key: "one", // 用作內部邏輯與元件對應
     title: "斑塊型圓禿", // 顯示用文字
-    label: "click-Comorb-tab-1",
+    label: "click-alopeciaareata-tab-1",
   },
   {
     key: "two",
     title: "全頭禿",
-    label: "click-Comorb-tab-2",
+    label: "click-alopeciaareata-tab-2",
   },
   {
     key: "three",
     title: "全身禿",
-    label: "click-Comorb-tab-3",
+    label: "click-alopeciaareata-tab-3",
   },
 ]);
 

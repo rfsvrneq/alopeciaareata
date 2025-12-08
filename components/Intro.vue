@@ -7,8 +7,7 @@ div#intro.bg-blue-100.z-10.relative(class="imp_event" data-title="alopeciaareata
     img.mx-auto.mb-10(src="../assets/img/intro-img-1.svg", alt="icon" class="w-6")
     
     .content-p.text-center.gs-fade
-      p.inline(class="sm:block") 睡一覺起來，頭髮竟缺了一塊！ 
-      p.inline(class="sm:block") 很多人以為只是單純的落髮，
+      p.inline(class="sm:block") 睡一覺起來，頭髮竟缺了一塊！ 很多人以為只是單純的落髮，
       p.inline(class="sm:block") 但最新醫學研究發現，圓禿（Alopecia Areata）其實是免疫疾病，
       p.inline(class="sm:block") 所幸隨醫學進步已經有很明確的治療方法。
       p.inline(class="sm:block") 圓禿是一種自體免疫疾病，誘發的原因很多，包括壓力、環境、
