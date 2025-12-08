@@ -70,7 +70,7 @@ export default defineNuxtPlugin((nuxtApp) => {
           yPercent: 0,
           duration: 0.8,
           delay: 1,
-          ease: "expo",
+          ease: "power2",
         }
       )
       .from(
@@ -78,7 +78,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         {
           yPercent: 100,
           duration: 0.8,
-          ease: "expo",
+          ease: "power2",
         },
         "-=.5"
       )
@@ -87,26 +87,26 @@ export default defineNuxtPlugin((nuxtApp) => {
         {
           duration: 0.8,
           autoAlpha: 0,
-          ease: "expo",
+          ease: "power2",
         },
-        "-=.25"
+        ".5s"
       )
       .from(
         elTitle4,
         {
           autoAlpha: 0,
           duration: 0.8,
-          xPercent: 50,
-          ease: "expo",
+          xPercent: 20,
+          ease: "power2",
         },
-        "-=.25"
+        ".55s"
       )
       .from(
         elTitle5,
         {
           duration: 0.8,
           autoAlpha: 0,
-          ease: "expo",
+          ease: "power2",
         },
         "-=.25"
       )
@@ -115,9 +115,9 @@ export default defineNuxtPlugin((nuxtApp) => {
         {
           duration: 0.8,
           autoAlpha: 0,
-          ease: "expo",
+          ease: "power2",
         },
-        "-=.25"
+        "-=.5"
       );
   });
 

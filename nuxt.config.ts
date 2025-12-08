@@ -121,10 +121,9 @@ export default defineNuxtConfig({
   },
 
   plugins: [
-    {
-      src: "~/plugins/aos.js",
-      // ssr: false,
-      mode: "client",
-    },
+    // {
+    //   src: "~/plugins/aos.js",
+    //   mode: "client",
+    // },
   ],
 });
